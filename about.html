@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Artifika' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: 'Artifika', sans-serif;
+            margin: 0;
+            background-color: azure;
+            text-align: center;
+
+        }
+
+        html {
+            box-sizing: border-box;
+        }
+
+        *,
+        *:before,
+        *:after {
+            box-sizing: inherit;
+        }
+
+        .column {
+            margin: auto;
+            width: 33.3%;
+            margin-bottom: 16px;
+            padding: 0 8px;
+        }
+
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            margin: 8px;
+        }
+
+        .about-section {
+            padding: 50px;
+            text-align: center;
+            background-color: gainsboro;
+            color: gray;
+            margin: auto;
+            width: 80%;
+        }
+
+        .container {
+            padding: 0 16px;
+        }
+
+        .container::after,
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .title {
+            color: grey;
+        }
+
+        .button {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 8px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .button:hover {
+            background-color: #555;
+        }
+
+        #title {
+            font-size: 24pt;
+            color: #4285F4;
+            text-align: center;
+            margin-top: 10px;
+            font-family: 'Bangers', sans-serif;
+            font-style: bold;
+        }
+
+
+        /*        The nav css starts below*/
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #4285F4;
+        }
+
+        /*        the nav css ends here*/
+
+
+        /* Add a hover effect for buttons */
+        button:hover {
+            opacity: 0.8;
+        }
+
+        @media screen and (max-width: 650px) {
+            .column {
+                width: 100%;
+                display: block;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <p id="title">Community BookStore</p>
+    <ul>
+        <li><a href="index.php">Login</a></li>
+        <li><a class="active" href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="about-section">
+        <h1>About Us</h1>
+        <p>We are here for you since 1990s to today's leading resource for plathora of choices, Community BookStore continues to provide an enormous selection at excellent value, with strong customer service and support. Learn more about the topics that strikes in your head anytime. We have almost every topic covered in our store jsut for you!</p>
+        <p>The physical store is open from Monday to Saturday 5 AM to 11 PM. But hey! you are not restricted on our online store. The online store is available 365 days 24 hours.</p>
+    </div>
+
+    <h2 style="text-align:center">Thank You! For Reading Us</h2>
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <img src="proj1Ruchi.jpg" alt="Ruchi" style="width:100%">
+                <div class="container">
+                    <h2>Ruchi</h2>
+                    <p class="title">CEO & Founder</p>
+                    <p>Web-Design and Developement Student of Conestoga College</p>
+                    <p>ruchi@example.com</p>
+                    <p><button class="button">Contact</button></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
